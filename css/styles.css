@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background: #ccc;
+}
+
+p {
+	margin: 0 0 5px;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 980px;
+	padding: 25px 45px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.form-person {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px;
+	background: #fff;
+}
+
+.form-person_label {
+	font-size: 1.2rem;
+	padding-bottom: 5px;
+}
+
+.form-person_wrap {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.form-person_wrap-btn {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-bottom: 0;
+}
+
+.form-person_field {
+	width: 80%;
+	padding: 7px 12px;
+	border: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+
+.form-person_btn {
+	display: flex;
+	justify-content: center;
+	width: 100px;
+	padding: 8px 13px;
+	font-size: 1.1rem;
+	color: #fff;
+	background: #c07253;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+}
+
+/* classes for js */
+.success {
+	background: #fbfec4;
+	border: 1px solid #377e22;
+}
+
+.error {
+	border: 1px solid #eb3323;
+}
+
+/* media-queries */
+@media screen and (max-width: 700px){
+	.form-person_wrap {
+		width: 100%;
+		align-items: center;
+	}
+	.form-person_wrap-btn {
+		margin-top: 15px;
+		justify-content: center;
+	}
+	.form-person_completedlist, .form-person_emptylist {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.form-person {
+		padding: 35px;
+	}
+	.form-person_label {
+		font-size: 1rem;
+	}
+}
