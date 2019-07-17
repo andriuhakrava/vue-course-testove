@@ -71,7 +71,6 @@ p {
 	cursor: pointer;
 }
 
-/* classes for js */
 .success {
 	background: #fbfec4;
 	border: 1px solid #377e22;
@@ -81,7 +80,6 @@ p {
 	border: 1px solid #eb3323;
 }
 
-/* media-queries */
 @media screen and (max-width: 700px){
 	.form-person_wrap {
 		width: 100%;
